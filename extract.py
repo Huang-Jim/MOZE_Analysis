@@ -27,14 +27,12 @@ if __name__ == '__main__':
         focus_data = data[['類型', '主類別', '子類別', '日期', '金額']]
         month_data = focus_data.loc[focus_data['日期'].str.match(date)]
 
-        month_sheet = MonthSheet(date)
-        for index, row in month_data.iterrows():
-            month_sheet.add_row(row=row)
+        if not month_data.empty:  # 如果使用者輸入的日期抓出來是空的代表沒有csv裡面沒有相對應的資料
+            month_sheet = MonthSheet(date)
+            for index, row in month_data.iterrows():
+                month_sheet.add_row(row=row)
 
-        month_sheets[date] = month_sheet
+            month_sheets[date] = month_sheet
 
     month_sheets = OrderedDict(sorted(month_sheets.items(), key=lambda x: x[0]))
     joblib.dump(month_sheets, './month_sheets.pkl')
-    # https://stackoverflow.com/questions/49621169/joblib-load-main-attributeerror
-
-    print()
