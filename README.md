@@ -12,15 +12,18 @@
 # 使用方式
 1. 將匯出的檔案命名為```MOZE.csv```(應該也是```MOZE```APP預設名稱)
 2. 把檔案放到此專案資料夾內
-3. 執行```python extract.py -d all```，arguments詳細格式請參考(here)[https://github.com/Huang-Jim/MOZE_Analysis/blob/main/README.md#extractpy]
+3. 執行```python extract.py -d all```，arguments詳細格式請參考[此章節](https://github.com/Huang-Jim/MOZE_Analysis/blob/main/README.md#extractpy)
 4. 透過```joblib.load(month_sheets.pkl)```後，就能如同```structure_examples.ipynb```或是```plot_examples.ipynb```裡面提到的範例來分析資料了~
 
 # extract.py
 + ```extract.py```會依照給定的期間(-d或--duration)將csv檔轉換成```month_sheets.pkl```
 + ```-d all``` : 將csv檔案的所有消費資料全部轉換為pkl檔
-+ ```-d 年/月``` : 只轉換csv檔案內特定的某個年/月的消費資料，e.g. ```python extract.py -d 2021/5``` 代表將2021年5月的消費資料轉換成pkl檔
-+ ```-d 年/月-``` : 轉換csv檔案內特定的某個年/月開始一直到最新的消費資料，e.g. ```python extract.py -d 2021/4-``` 代表將2021年4月開始一直到最新的年月的消費資料轉換成pkl檔
-+ ```-d 年/月-年/月``` : 轉換csv檔案內特定的某個年/月開始一直指定的年/月的消費資料，e.g. ```python extract.py -d 2020/4-2021/5``` 代表將2020年4月開始一直到2021年5月的消費資料轉換成pkl檔
++ ```-d 年/月``` : 只轉換csv檔案內特定的某個年/月的消費資料
+  + e.g. ```python extract.py -d 2021/5``` 代表將2021年5月的消費資料轉換成pkl檔
++ ```-d 年/月-``` : 轉換csv檔案內特定的某個年/月開始一直到最新的消費資料
+  + e.g. ```python extract.py -d 2021/4-``` 代表將2021年4月開始一直到最新的年月的消費資料轉換成pkl檔
++ ```-d 年/月-年/月``` : 轉換csv檔案內特定的某個年/月開始一直指定的年/月的消費資料
+  + e.g. ```python extract.py -d 2020/4-2021/5``` 代表將2020年4月開始一直到2021年5月的消費資料轉換成pkl檔
 
 # 三個資料型態
 由大而小分別為```MonthSheet```、```MainItem```以及```SubItem```，詳情可以參考```structure_examples.ipynb```，裡面描述了類別內方便的調用方法
