@@ -30,3 +30,7 @@
 
 # 資料分析與做圖
 將```MOZE.csv```轉換成```month_sheets.pkl```後，可以用簡單的程式將消費習慣量化，也可以透過如```matplotlib```或是```plotly```做視覺化呈現，本專案提供透過```plotly```操作類別物件的視覺化過程，```plotly```的優點是可將視覺化結果以html呈現，使用者可以透過觸發事件與圖上的物件做互動，詳情請參考```plot_examples.ipynb```
+
+# 視覺化例子截圖
+由於```.ipynb```內的資料可能含有個人隱私，所以我將分析&做圖結果清除掉，這邊以截圖的方式呈現一些做圖結果
+![alt text](<img src="/fig_source/fig1.jpg" alt="drawing" width="200"/>)
