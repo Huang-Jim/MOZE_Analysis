@@ -1,5 +1,5 @@
 # MOZE_Analysis
-+ ```MOZE```是一套手機記帳軟體APP，詳情請見[官方網站](https://moze.app/)  
++ ```MOZE```是一套手機記帳軟體APP，詳情請見[官方網站](https://moze.app/) (本人非APP相關人員，也不是葉配)  
 + APP裡面已經提供了非常好用的使用者介面，可以很簡單的分析消費，但有一些比較複雜的分析可能是APP裡面做不太到的  
 + APP作者也提供匯出功能，可以將個人的資料以csv檔案([匯出格式](https://doc.moze.app/feature/import-export#export))匯出做後續分析  
 + 本專案將csv的資料轉換成三大類別整理成結構化的型態，可以比較方便用一些繪圖package做分析(當然你也可以直接透過```pandas```操作csv做分析)  
