@@ -33,4 +33,4 @@
 
 # 視覺化例子截圖
 由於```.ipynb```內的資料可能含有個人隱私，所以我將分析&做圖結果清除掉，這邊以截圖的方式呈現一些做圖結果
-![alt text](<img src="/fig_source/fig1.jpg" alt="drawing" width="200"/>)
+<img src="/fig_source/fig1.png" alt="子類別圓餅圖" width="200"/>
