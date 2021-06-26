@@ -14,7 +14,7 @@
 1. 將匯出的檔案命名為```MOZE.csv```(應該也是```MOZE```APP預設名稱)
 2. 把檔案放到此專案資料夾內
 3. 執行```python extract.py -d all```，arguments詳細格式請參考[此章節](https://github.com/Huang-Jim/MOZE_Analysis#extractpy)
-4. 透過```joblib.load(month_sheets.pkl)```後，就能如同```structure_examples.ipynb```或是```plot_examples.ipynb```裡面提到的範例來分析資料了~
+4. 透過```joblib.load(month_sheets.pkl)```後，就能如同[```structure_examples.ipynb```](https://github.com/Huang-Jim/MOZE_Analysis/blob/main/structure_examples.ipynb)或是[```plot_examples.ipynb```](https://github.com/Huang-Jim/MOZE_Analysis/blob/main/plot_examples.ipynb)裡面提到的範例來分析資料了~
 
 # extract.py
 + ```extract.py```會依照給定的期間(-d或--duration)將csv檔轉換成```month_sheets.pkl```
@@ -27,10 +27,10 @@
   + e.g. ```python extract.py -d 2020/4-2021/5``` 代表將2020年4月開始一直到2021年5月的消費資料轉換成pkl檔
 
 # 三個資料型態
-由大而小分別為```MonthSheet```、```MainItem```以及```SubItem```，詳情可以參考```structure_examples.ipynb```，裡面描述了類別內方便的調用方法
+由大而小分別為```MonthSheet```、```MainItem```以及```SubItem```，詳情可以參考[```structure_examples.ipynb```](https://github.com/Huang-Jim/MOZE_Analysis/blob/main/structure_examples.ipynb)，裡面描述了類別內方便的調用方法
 
 # 資料分析與做圖
-將```MOZE.csv```轉換成```month_sheets.pkl```後，可以用簡單的程式將消費習慣量化，也可以透過如```matplotlib```或是```plotly```做視覺化呈現，本專案提供透過```plotly```操作類別物件的視覺化過程，```plotly```的優點是可將視覺化結果以html呈現，使用者可以透過觸發事件與圖上的物件做互動，詳情請參考```plot_examples.ipynb```
+將```MOZE.csv```轉換成```month_sheets.pkl```後，可以用簡單的程式將消費習慣量化，也可以透過如```matplotlib```或是```plotly```做視覺化呈現，本專案提供透過```plotly```操作類別物件的視覺化過程，```plotly```的優點是可將視覺化結果以html呈現，使用者可以透過觸發事件與圖上的物件做互動，詳情請參考[```plot_examples.ipynb```](https://github.com/Huang-Jim/MOZE_Analysis/blob/main/plot_examples.ipynb)
 
 # 視覺化案例 
 由於```.ipynb```內的資料可能含有個人隱私，所以我將分析&做圖結果清除掉，這邊以截圖取代html呈現一些做圖結果   
